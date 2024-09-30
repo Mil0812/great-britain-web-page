@@ -4,7 +4,7 @@
     <head>
         <meta charset="utf-8">
         <title>Велика Британія</title>
-        <link rel="shortcut icon" href="images/GB_icon.ico" type="image/x-icon">
+        <link type="image/x-icon" href="images/GB_icon.ico" rel="shortcut icon">
         <meta name="description" content="Дивовижна країна - Велика Британія та міста в ній">
         <meta name="author" content="Автор: Кулак Людмила">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,22 +13,23 @@
         <meta property="og:url" content="https://great_britain.com">
         <meta property="og:image" content="images/GB_icon.ico">
         <meta property="og:description" content="Everything about Great Britain">
+        <link rel="stylesheet" href="style/style.css">
     </head>
 
     <body>
         <header>
-            <h1>GREAT BRITAIN</h1>
+            <h1 id="main_title">GREAT BRITAIN</h1>
             <nav>
                 <ol>
-                    <li><a href="#">Головна</a></li>
-                    <li><a href="#">Фотогалерея</a></li>
+                    <li><a>Головна</a></li>
+                    <li><a>Фотогалерея</a></li>
                     <li><a href="#">Замовити путівку</a></li>
                 </ol>
             </nav>
         </header>
         <main>
             <pre>
-                GGGGG          BBBBBBB
+                 GGGGG          BBBBBBB
                 GGGGGGG        BBB   BBB
               GGG    GGG     BBB     BBB
               GGG            BBB       BBB
@@ -40,8 +41,7 @@
             </pre>
             <article>
                 <h1>Загальна інформація про країну</h1>
-                <div id="general_about_country"
-                    style="background-color: darkblue; color: aliceblue; width: fit-content;">
+                <div>
                     <p>Велика Британія – країна з багатою історичною й культурною спадщиною, давніми традиціями й
                         гостинними жителями. <br>
                         Країна, де люди і сьогодні люблять свого монарха, країна, де дбайливо шанують традиції предків,
@@ -49,114 +49,185 @@
                         які немов зійшли зі сторінок старовинних казок і легенд
                     </p>
                 </div>
-                <p>Країни, що входять в неї:<span style="color: rgb(98, 0, 0); font-weight: bold;"> Англія, Північна
-                        Ірландія, Шотландія та Уельс</span></p>
-                <a href="https://maps.app.goo.gl/MhQjMiyHiMCVNiRE6" target="blank"
-                    title="Переглянути геолокацію">Розташування: Велика Британія розташована на північному заході
-                    Європи</a>
-                <p>Офіційна мова у Великій Британії - <b>англійська мова</b>, яка станом на сьогодні використовується
-                    мільйонами людей по всій Землі</p>
-                <p>Велика Британія, а саме Англія є найбільш <del style="color:rgb(98, 0, 0)">дощовою</del> <ins
-                        style="color: green">аристократичною</ins> країною</p>
+                <p>Країни, що входять в неї:<span> Англія, Північна Ірландія, Шотландія та Уельс</span>
+                </p>
+                <a href="https://maps.app.goo.gl/MhQjMiyHiMCVNiRE6" title="Переглянути геолокацію"
+                    target="blank">Розташування: Велика Британія розташована на північному заході
+                    Європи
+                </a>
+                <p>Офіційна мова у Великій Британії - <b class="keywords">англійська мова</b>, яка станом на сьогодні
+                    використовується мільйонами людей по всій Землі
+                </p>
+                <p>Велика Британія, а саме Англія є найбільш <del>дощовою</del> <ins>аристократичною</ins> країною
+                </p>
                 <p>Попри те, що ця країна характеризується часто-густими опадами, слова Девіда Віскотта</p>
                 <blockquote cite="https://www.brainyquote.com/quotes/david_viscott_162271">
                     <p>"To love and be loved is to feel the sun from both sides"</p>
                 </blockquote>
                 <p>яскраво характеризують цю країну</p>
                 <p>Побувати в цій дивовижній країні хоча б раз в житті варто того! Тому не відкладуйте свої мрії в
-                    довгий ящик! <br>
+                    довгий ящик!<br>
                     Натомість, як сказано у відомій крилатій фразі, <i>"Dream until your dreams come true!"</i>
                     А ми допоможемо втілити Ваші мрії! <br>
-                    <b>Замовити путівку</b> для подорожі цією чудовою країною можна у відповідній вкладці нашого сайту!
+                    <b class="keywords">Замовити путівку</b> для подорожі цією чудовою країною можна у відповідній
+                    вкладці нашого сайту!
                 </p>
                 <figure>
-                    <img src="images/GB_general.jpg" alt="Great Britain on map" style="width: 300px;">
+                    <img src="images/GB_general.jpg" alt="Great Britain on map">
                     <figcaption>Велика Британія на карті</figcaption>
                 </figure>
             </article>
-            <article>
+            <hr>
+            <article class="city">
                 <h1>Лондон</h1>
+                <p>eng."City of London"</p>
+                <p>Столиця Англії</p>
                 <picture>
                     <source media="(min-width:600px)" srcset="images/London_source1.jpg">
-                    <source media="(min-width:400px)" srcset="images/London_source2.jpg">
-                    <img src="images/London.jpg" style="width:auto;" alt="London image">
+                    <source media="(min-width:200px)" srcset="images/London_source2.jpg">
+                    <img src="images/London.jpg" alt="London image">
                 </picture>
                 <h4>William Blake, 'London'</h4>
                 <p>Ne’er saw I, never felt, a calm so deep!<br>The river glideth at his own sweet will:<br>Dear God! the
-                    very houses seem asleep;<br>And all that mighty heart is lying still!</p>
+                    very houses seem asleep;<br>And all that mighty heart is lying still!
+                </p>
                 <section>
                     <h2>Цікаві факти про місто</h2>
                     <ul>
-                        <li>Знаменита лондонська вежа - звичайно ж, <del style="color:rgb(98, 0, 0)">«Біг Бен»</del>
-                            <ins style="color: green">«Елізабет»</ins>, всуперед поширеному міфу. «Біг Беном»
+                        <li>Знаменита лондонська вежа - звичайно ж, <del>«Біг Бен»</del>
+                            <ins>«Елізабет»</ins>, всуперед поширеному міфу. «Біг Беном»
                             називається встановлена там дзвіниця, а сама вежа носить назву «Елізабет»
                         </li>
                         <li>В одному з музеїв Лондона зберігається колекція речей, забутих пасажирами в лондонському
                             метро. Вона містить такі екстравагантні речі, як людський череп, самурайський меч, труну і
-                            рибу фугу</li>
+                            рибу фугу
+                        </li>
                         <li><strong>Аеропорт Хітроу в Лондоні</strong> приймає і відправляє міжнародних рейсів більше,
-                            ніж будь-який інший аеропорт світу</li>
+                            ніж будь-який інший аеропорт світу
+                        </li>
                         <li>Всупереч поширеній думці, Лондон – місто зовсім не дощове місто. Навпаки, він один із
-                            найсухіших у Європі. А ось похмурих днів тут дійсно багато</li>
+                            найсухіших у Європі. А ось похмурих днів тут дійсно багато
+                        </li>
                         <li>Від Лондона до Парижа можна дістатися поїздом усього за дві години</li>
                     </ul>
                 </section>
                 <p>А взагалі, <q>Лондон — це місто суперечностей. У ньому є чарівність старого світу та історія, але в
-                        ньому також є сучасна, модна та гостра сторона</q></p>
-                <footer>Posted 2 days ago</footer>
+                        ньому також є сучасна, модна та гостра сторона
+                    </q>
+                </p>
+                <footer>
+                    <p>Posted 2 days ago</p>
+                </footer>
             </article>
-            <hr>
-            <article>
+            <article class="city">
                 <h1>Оксфорд</h1>
+                <p>eng."Oxford city"</p>
                 <picture>
                     <source media="(min-width:600px)" srcset="images/Oxford_source1.jpg">
-                    <source media="(min-width:400px)" srcset="images/Oxford_source2.jpeg">
-                    <img src="images/Oxford.jpg" style="width:auto;" alt="Oxford image">
+                    <source media="(min-width:200px)" srcset="images/Oxford_source2.jpeg">
+                    <img src="images/Oxford.jpg" alt="Oxford image">
                 </picture>
-                <p> <b>Оксфорд</b> - англійське місто, розташоване за 90 кілометрів на північний захід від Лондона. <br>
+                <p> <b class="keywords">Оксфорд</b> - англійське місто, розташоване за 90 кілометрів на північний захід
+                    від Лондона. <br>
                     Це місто-графство і єдине місто в графстві Оксфордшир. У 2020 році населення Оксфорда оцінювалося в
                     151 584 особи, <br>
-                    і щороку місто відвідують близько 7 мільйонів людей, що робить Оксфорд <span
-                        style="color: darkgreen; font-weight: bold;">7-м найбільш відвідуваним містом у Сполученому
-                        Королівстві</span></p>
+                    і щороку місто відвідують близько 7 мільйонів людей, що робить Оксфорд <span id="green_span">7-м
+                        найбільш
+                        відвідуваним містом у Сполученому Королівстві
+                    </span>
+                </p>
                 <section>
                     <h2>Цікаві факти про місто</h2>
                     <ul>
                         <li>Раніше місто називалося Форд фор Оксен ('брід для биків' через Темзу)</li>
                         <li>Одне з улюблених занять в Оксфорді - катання на човнах, керованих жердиною</li>
-                        <li><b>Університет в місті Оксфорд</b> в графстві Оксфордшир в Великобританії найстаріший в
-                            світі англомовний університет, перший університет у Великобританії</li>
+                        <li><b class="keywords">Університет в місті Оксфорд</b> в графстві Оксфордшир в Великобританії
+                            найстаріший в
+                            світі англомовний університет, перший університет у Великобританії
+                        </li>
                         <li>Понад 20 тисяч студентів навчається в Оксфорді, чверть з них - іноземці</li>
                     </ul>
                 </section>
                 <p>Історія знаменитого оксфордського університету цікаво та повчально
                     описана в книзі <cite>The University of Oxford: A History</cite>
-                    автора <cite>L. W. B. Brockliss</cite></p>
-                <footer>Posted 1 day ago</footer>
+                    автора <cite>L. W. B. Brockliss</cite>
+                </p>
+                <footer>
+                    <p>Posted 1 day ago</p>
+                </footer>
             </article>
+            <section>
+                <table>
+                    <caption>Основні країни Великої Британії:</caption>
+                    <tr>
+                        <th>Назва</th>
+                        <th>Столиця</th>
+                        <th>Площа</th>
+                    </tr>
+                    <tr>
+                        <td>Англія</td>
+                        <td>Лондон</td>
+                        <td>130 km²</td>
+                    </tr>
+                    <tr>
+                        <td>Шотландія</td>
+                        <td>Єдинбург</td>
+                        <td>78 km²</td>
+                    </tr>
+                    <tr>
+                        <td>Уельс</td>
+                        <td>Кардіфф</td>
+                        <td>21 km²</td>
+                    </tr>
+                    <tr>
+                        <td>Північна Ірландія</td>
+                        <td>Белфаст</td>
+                        <td>14 km²</td>
+                    </tr>
+                </table>
+            </section>
             <aside>
-                <h3>Реклама</h3>
-                <p>~ Якийсь текст рандомної реклами ~</p>
+                <p>Реклама:</p>
+                <p>Якийсь текст рандомної реклами</p>
+                <p class="uppercase">і ще якийсь текст капс-локом, що теж всередині aside</p>
+                <p class="turned_text">~ а це перевернутий текст ~</p>
                 <small>І ще якась підреклама чи щось подібне</small>
             </aside>
+            <form action="action_page.html" target="_blank" method="post" autocomplete="on">
+                <fieldset>
+                    <legend>Бронювання подорожі:</legend>
+                    Ваше ім'я:<br>
+                    <input name="username" type="text">
+                    <br>Номер телефону:<br>
+                    <input name="phone_number" type="tel" pattern="0[0-9]{2} [0-9]{3} [0-9]{4}" required>
+                    <span>Формат: 066 600 6060</span>
+                    <br>Бажана країна:<br>
+                    <input name="chosen_country" type="text" required>
+                    <br>Дата подорожі:<br>
+                    <input name="date" type="date" min="2024-10-01" required>
+                    <br>Улюблений колір (пункт по приколу) :<br>
+                    <input name="favourite_color" type="color">
+                    <br><br>
+                    <input type="submit" value="Поїхали!">
+                </fieldset>
+            </form>
         </main>
+        <br>
         <footer>
-            <adress>
+            <address>
                 Туристична агенція "All Around"<br>
                 Бейкері Стріт, 50<br>
                 Лондон, Велика Британія<br>
                 <a href="mailto:all_around@gmail.com">all_around@gmail.com</a><br>
                 Номер телефону: <a href="tel:+442010761227">+442010761227</a>
-            </adress>
-            <ul>
+            </address>
+            <ul id="social_media_list">
                 <li>
                     <p>Ми у соцмережах:</p>
                 </li>
-            </ul>
-            <ul style="list-style-type: none;">
                 <li><a href="#"><img src="images/instagram_logo.png" alt="instagram_logo"></a></li>
-                <li><a href="#"></a><img src="images/facebook_logo.png" alt="facebook_logo"></a></li>
-                <li><a href="#"></a><img src="images/telegram_logo.png" alt="telegram_logo"></a></li>
+                <li><a href="#"></a><img src="images/facebook_logo.png" alt="facebook_logo"></li>
+                <li><a href="#"></a><img src="images/telegram_logo.png" alt="telegram_logo"></li>
             </ul>
         </footer>
     </body>
