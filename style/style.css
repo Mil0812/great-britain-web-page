@@ -1,0 +1,295 @@
+* {
+    box-sizing: border-box;
+}
+
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(21,0,88,1) 35%, rgba(0,212,255,1) 100%);
+    background-image: url("../images/bg.jpg");
+    background-size: inherit;
+    background-position: center;
+}
+
+body{
+    width: 70%;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-size: 1rem;
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+    font-weight: normal;
+    line-height: 1.4rem;
+    color: black;
+    background-color: aliceblue;
+}
+
+header,
+footer {
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(21,0,88,1) 35%, rgba(0,212,255,1) 100%);
+    background-image: url("../images/flag.jpg");
+    background-size: cover;
+}
+
+article {
+    border: 2px outset #ff0051;
+    border-radius: 3px;
+    padding: 1rem;
+}
+
+aside {
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 1rem;
+}
+
+table{
+    width: 100%;
+    max-width: 100%;
+    border-collapse: collapse;
+    color:darkblue;
+}
+
+form{
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 30%);
+}
+
+fieldset {
+    border: 1px solid #007ed8;
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+legend {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #007ed8;
+    padding: 0 10px;
+}
+
+form span {
+    font-size: 0.85rem;
+    color: silver;
+    font-weight: normal;
+}
+
+td,
+th {
+    border: 1px solid brown;
+    text-align: justify;
+    padding: 1rem;
+    word-wrap: break-word;
+    max-width: 100%;
+}
+
+address{
+    font-style: normal;
+    margin-bottom: 1rem;
+    line-height: unset;
+}
+
+:is(h1,h2, h3, h4, h5, h6){
+    background-color: brown;
+    color: white;
+    margin-bottom: 3rem;
+    padding: 0.8rem;
+}
+
+p {
+    text-align: justify;
+    max-width: max-content;
+    margin-bottom: 1rem;
+}
+
+pre {
+    margin-top: unset;
+    margin-bottom: 1rem;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    max-width: 100%;
+    overflow-x: auto;
+    margin: 0 auto;
+}
+
+ul,
+ol{
+    margin-bottom: 1rem;
+    margin-top: unset;
+}
+
+div {
+    background-color: rgba(0, 0, 139, 0.637);
+    color: aliceblue;
+    width: fit-content;
+}
+
+span {
+    color: rgba(98, 0, 0, 0.681);
+    font-weight: bold;
+}
+
+del {
+    color: rgb(98, 0, 0);
+}
+
+ins {
+    color: green;
+}
+
+.turned_text {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.keywords {
+    text-shadow: 1px 1px 3px darkblue;
+}
+
+.city{
+    border-color: dodgerblue;
+}
+
+#green_span {
+    color: darkgreen;
+    font-weight: bold;
+}
+#social_media_list {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+#main_title{
+    font-size: clamp(1.5rem, 5vw, 4rem);
+    font-weight: bold;
+    text-align: center;
+    background: none;
+    margin: 0 auto;
+}
+
+/*Селектор нащадків*/
+aside p {
+    color: rgba(0, 0, 139, 0.637);
+}
+
+header,
+address,
+footer p
+{
+    color: white;
+}
+
+article img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+#social_media_list li {
+    margin: 0 1rem;
+}
+
+#social_media_list img {
+    width: 2.5rem;
+    height: auto;
+}
+
+/* Сусідній споріднений селектор */
+h1+p {
+    background-color: lightcoral;
+    color: rgb(62, 0, 0);
+    width: fit-content;
+}
+
+/*Псевдокласи*/
+a:visited {
+    color: #007ed8;
+}
+
+a:hover {
+    color: #ff0051;
+}
+
+:is(h1, h2, h3, h4, h5, h6):hover {
+    background-color: white;
+    color: brown;
+    border: 2px inset #ff0051;
+}
+
+#main_title:hover{
+    background-color: none;
+    color: unset;
+    border: none;
+}
+/* Псевдоелемент :first-child */
+li:first-child{
+    color: #ff0051;
+}
+aside p:first-child{
+    font-weight: bold;
+}
+
+/* Псевдоелемент first-line */
+pre:first-line {
+    color: #ff0051;
+}
+
+/* Псевдоелемент first-letter */
+div p::first-letter {
+    font-size: xx-large;
+}
+
+/* Псевдоелемент marker */
+::marker {
+    color: #ff0051;
+}
+
+/* Псевдоелемент before */
+footer::before{
+    content: "footer:";
+    color: blanchedalmond;
+}
+
+/* Псевдоелемент selection */
+::selection {
+    color: darkblue;
+    background-color: rgb(235, 241, 255);
+}
+
+/* Селектори атрибутів */
+a[href] {
+    background-color: rgb(235, 241, 255);
+}
+
+form input[type="submit"] {
+    background-color: #007ed8;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #005b99;
+    /* color: white;
+    cursor: pointer; */
+}
